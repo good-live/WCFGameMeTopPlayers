@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+    <category name="wcf.dashboard">
+        <item name="wcf.dashboard.box.eu.painlessgaming.wcf.gameme.box.title"><![CDATA[Top Spieler]]></item>
+    </category>
+
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.general.gameMe"><![CDATA[GameMe Top Player]]></item>
+        <item name="wcf.acp.option.gameMe_url"><![CDATA[URL zur GameMe Installation]]></item>
+        <item name="wcf.acp.option.gameMe_game"><![CDATA[Das Spiel. Bsp. "csgo".]]></item>
+        <item name="wcf.acp.option.gameMe_limit"><![CDATA[Anzahl an Spielern]]></item>
+    </category>
+</language>
