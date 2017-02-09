@@ -5,7 +5,7 @@
             <div class="sidebarBoxHeadline">
                 <a href="{GAMEME_URL|trim}/playerinfo/{$player.id}">{$player.name}</a>
                 <br>
-                <small>{$player.uniqueid}</small>
+                <small>{$player.points}</small>
             </div>
         </li>
     {/foreach}

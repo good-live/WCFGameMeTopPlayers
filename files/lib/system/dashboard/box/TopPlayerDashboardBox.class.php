@@ -3,9 +3,9 @@
 namespace wcf\system\dashboard\box;
 
 use wcf\data\dashboard\box\DashboardBox;
-use wcf\data\gameme\GameMe;
 use wcf\page\IPage;
 use wcf\system\WCF;
+use wcf\system\cache\builder\TopPlayersCacheBuilder;
 
 /**
  * Created by PhpStorm.
@@ -13,6 +13,7 @@ use wcf\system\WCF;
  * Date: 21.01.2017
  * Time: 22:12
  */
+
 class TopPlayerDashboardBox extends AbstractSidebarDashboardBox
 {
     protected $list;
@@ -23,8 +24,7 @@ class TopPlayerDashboardBox extends AbstractSidebarDashboardBox
     public function init(DashboardBox $box, IPage $page) {
         parent::init($box, $page);
 
-        $gameMe = new GameMe(GAMEME_GAME, GAMEME_URL, GAMEME_LIMIT);
-        $this->list = $gameMe->getGameMeTopPlayers();
+        $this->list = TopPlayersCacheBuilder::getData();
     }
 
     /**
