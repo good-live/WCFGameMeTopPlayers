@@ -5,8 +5,8 @@
         <packagedescription><![CDATA[Shows the top Players of a GameMe installation.]]></packagedescription>
         <packagename language="de"><![CDATA[TopPlayer - GameMe]]></packagename>
         <packagedescription language="de"><![CDATA[Shows the top Players of a GameMe installation.]]></packagedescription>
-        <version>1.0.0</version>
-        <date>2017-01-21</date>
+        <version>1.0.5</version>
+        <date>2017-02-11</date>
         <packageurl>https://painlessgaming.eu</packageurl>
     </packageinformation>
 

@@ -7,6 +7,7 @@
     <category name="wcf.acp.option">
         <item name="wcf.acp.option.category.general.gameMe"><![CDATA[GameMe Top Player]]></item>
         <item name="wcf.acp.option.gameMe_url"><![CDATA[URL zur GameMe Installation]]></item>
+        <item name="wcf.acp.option.gameMe_refresh"><![CDATA[Refresh Zeit (Cache)]]></item>
         <item name="wcf.acp.option.gameMe_game"><![CDATA[Das Spiel. Bsp. "csgo".]]></item>
         <item name="wcf.acp.option.gameMe_limit"><![CDATA[Anzahl an Spielern]]></item>
     </category>

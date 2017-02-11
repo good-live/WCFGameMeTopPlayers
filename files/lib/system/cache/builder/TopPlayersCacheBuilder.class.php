@@ -17,18 +17,16 @@ class TopPlayersCacheBuilder extends AbstractCacheBuilder
     /**
      * @see	\wcf\system\cache\builder\AbstractCacheBuilder::$maxLifetime
      */
-    protected $maxLifetime = SERVERLIST_REFRESH;
+    protected $maxLifetime = GAMEME_REFRESH;
 
     private $gameme;
-
-    protected function init() {
-        $this->gameMe = new GameMe(GAMEME_GAME, GAMEME_URL, GAMEME_LIMIT);
-    }
 
     /**
      * @see	\wcf\system\cache\builder\AbstractCacheBuilder::rebuild()
      */
-    protected function rebuild(array $parameters) {
+    public function rebuild(array $parameters) {
+        if($this->gameme == null)
+            $this->gameme = new GameMe(GAMEME_GAME, GAMEME_URL, GAMEME_LIMIT);
         $xml = $this->gameme->getTopPlayers();
 
         $players = array();
@@ -38,9 +36,9 @@ class TopPlayersCacheBuilder extends AbstractCacheBuilder
             $new_player = array();
             $new_player['name'] = (string) $player->name;
             $new_player['avatar'] = (string) $player->avatar;
-            $new_player['id'] = $player->id;
+            $new_player['id'] = (string) $player->id;
             $new_player['uniqueid'] = (string) $player->uniqueid;
-            $new_player['points'] = $player->skill;
+            $new_player['points'] = (string) $player->skill;
             $players[] = $new_player;
         }
 

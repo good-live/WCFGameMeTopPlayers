@@ -24,7 +24,7 @@ class TopPlayerDashboardBox extends AbstractSidebarDashboardBox
     public function init(DashboardBox $box, IPage $page) {
         parent::init($box, $page);
 
-        $this->list = TopPlayersCacheBuilder::getData();
+        $this->list = TopPlayersCacheBuilder::getInstance()->getData();
     }
 
     /**

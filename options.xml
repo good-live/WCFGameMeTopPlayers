@@ -11,6 +11,10 @@
 				<categoryname>general.gameMe</categoryname>
 				<optiontype>text</optiontype>
 			</option>
+			<option name="gameMe_refresh">
+				<categoryname>general.gameMe</categoryname>
+				<optiontype>text</optiontype>
+			</option>
 			<option name="gameMe_game">
 				<categoryname>general.gameMe</categoryname>
 				<optiontype>text</optiontype>
